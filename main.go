@@ -39,7 +39,7 @@ import (
 const (
 	VERSION          = "0.1"
 	DEFAULT_REFRESH  = 5 // default refresh interval in seconds
-	DEFAULT_WEB_ADDR = "0.0.0.0:8080"
+	DEFAULT_WEB_ADDR = "0.0.0.0:8063"
 	HISTORY_LENGTH   = 10 * 60 / DEFAULT_REFRESH // for 10 minutes
 )
 
@@ -59,7 +59,7 @@ Usage: rtop-vis host [host ...]
     host
         one or more host to monitor, "ssh host" should work without password
 
-After invoking, web UI will be available on http://localhost:8080/. Stats will
+After invoking, web UI will be available on http://localhost:8063/. Stats will
 be collected every 5 seconds and graphs will refresh every 10 seconds. Graphs
 will show 10 minutes of history.
 `, VERSION)
